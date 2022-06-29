@@ -1,0 +1,13 @@
+.posse-header {
+  width: 1440px;
+  height: 80px;
+  left: 0px;
+  right: 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  gap: 474px;
+}
