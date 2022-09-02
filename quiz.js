@@ -14,10 +14,6 @@ const quizList = [
 ]
 
 
-
-
-
-
 for (let quizNumber = 1; quizNumber <= 6; quizNumber++) {
   const quizBox=
   `<div class="quiz_container">`

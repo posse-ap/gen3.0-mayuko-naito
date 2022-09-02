@@ -14,11 +14,25 @@ const quizList = [
   {questionNumber:'6', question: '先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？', selectBox1: '約2倍', selectBox2: '約5倍', selectBox3: '約11倍',reference:'Accenture Technology Vision 2021', correctChoice:1},
 ]
 
+//問題のシャッフル
+function shuffleArray(quizList) {
+  for (let i = quizList.length - 1; i > 0; i--) {
+    let rand = Math.floor(Math.random() * (i + 1));
+    let tmpStorage = quizList[i];
+    quizList[i] = quizList[rand];
+    quizList[rand] = tmpStorage;
+  }
+}
+
+shuffleArray(quizList);
+
+console.log(quizList)
+
 //クイズコンテナの作成、correctChoiceの割り当て
 for (let quizNumber = 1; quizNumber <= 6; quizNumber++) {
 
   let quizBox = `<div class="quiz_${quizList[quizNumber-1].questionNumber}">`
-  + `<div class="q_icon">Q${quizList[quizNumber-1].questionNumber}</div>`
+  + `<div class="q_icon">Q${quizNumber}</div>`
   +`<h2>${quizList[quizNumber-1].question}</h2>`
   +`<img class="q${quizList[quizNumber-1].questionNumber}_image" src="./img/quiz/img-quiz0${quizList[quizNumber-1].questionNumber}.png"}>`
   +`<div class="q_answer">A</div>`
