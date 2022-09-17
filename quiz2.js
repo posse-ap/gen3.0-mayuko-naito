@@ -1,5 +1,14 @@
 'use strict';
 
+const ham = document.querySelector('#js-hamburger'); 
+const nav = document.querySelector('#js-nav'); 
+
+ham.addEventListener('click', function () { 
+  console.log('ok')
+  ham.classList.toggle('active');
+  nav.classList.toggle('active');
+});
+
 const answerText = [
   '約79万人', 'X-TECH', 'Internet of Things', 'Society5.0', 'Web3.0', '約5倍'
 ]

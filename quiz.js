@@ -1,5 +1,6 @@
 'use strict';
 
+
 const answerText = [
   '約79万人', 'X-TECH', 'Internet of Things', 'Society5.0', 'Web3.0', '約5倍'
 ]
