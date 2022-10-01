@@ -7,6 +7,7 @@
   <title>posse-ap</title>
   <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
   <!-- <link rel="stylesheet" href="./reset.css"> -->
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="./style.css">
   <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 </head>
@@ -16,23 +17,25 @@
       <h1 class="posse_logo">
         <img src="./img/logo.svg" alt="h_posse" width="148px" height="27.53px">
       </h1>
-      <div class="posse_nav" width="308px" height="50px">
-        <ul style="list-style-type: none">
-          <li>
-            <a href="">POSSEとは</a>
-          </li>
-          <li>
-            <a href="">クイズ</a>
-          </li>
-          <li>
-            <a href=""><img src="./img/icon/icon-twitter.svg" alt="header_Twitter"></a>
-          </li>
-          <li>
-            <a href=""><img src="./img/icon/icon-instagram.svg" alt="header_Instagram"></a>
-          </li>
-        </ul>
+
+        <nav class="header__nav nav" id="js-nav">
+          <ul class="nav__items nav-items ">
+            <li class="nav-items__item" ><a href="">POSSEとは</a></li>
+            <li class="nav-items__item"><a href="">クイズ</a></li>
+            <li class="nav-items__item"><a href=""><img src="./img/icon/icon-twitter.svg" alt="header_Twitter"></a></li>
+            <li class="nav-items__item"><a href=""><img src="img/icon/icon-instagram.svg" alt="header_Instagram"></a></li>
+          </ul>
+        </nav>
+
+        <button class="header__hamburger hamburger " id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
       </nav>
     </div>
+
   </header>
 
   <main>
@@ -99,7 +102,7 @@
   <footer>
     <div class="posse_footer">
       <div class="footer_info">
-        <img src="./img/logo.svg" alt="f_posse" width="202px" height="39.22px">
+        <img class="f_posse" src="./img/logo.svg" alt="f_posse" width="202px" height="39.22px">
         <a href="https://posse-ap.com/" rel="noopener noreferrer" class="footer_info_logo">POSSE公式サイト</a>
       </div>
       <div class="footer_sns">

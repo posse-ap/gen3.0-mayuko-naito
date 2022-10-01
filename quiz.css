@@ -3,12 +3,14 @@
   height: 80px;
   left: 0px;
   right: 0px;
+  top: 0px;;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px 24px;
-  /* gap: 474px; */
+  background-color: #fff;
+  position: fixed;
 }
 
 
@@ -17,9 +19,14 @@
   right: 0;
 }
 
-@media screen and (max-width:960px){
-  .header__nav{display: none;}
+
+body{
+  font-weight: 700;
 }
+
+/* @media screen and (max-width:960px){
+  .header__nav{display: none;}
+} */
 
 
 /* ヘッダーのナビ部分 */
@@ -34,7 +41,9 @@
   background-color: #fff;
   transition: ease .4s;
 }
-@media screen and (min-width: 960px) {
+
+
+@media screen and (min-width: 760px) {
   .header__nav {
     position: static;
     transform: initial;
@@ -103,7 +112,7 @@ ul {
 
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 760px) {
   /*PC時非表示にする*/
   .hamburger {
     display: none;
@@ -111,7 +120,7 @@ ul {
 }
 
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 760px) {
   .nav__items {
     width: 100%;
     display: flex;
@@ -126,7 +135,7 @@ ul {
   padding-bottom: 200px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 760px) {
   .nav-items {
   padding-top: inherit;
   padding-bottom: inherit;
@@ -135,12 +144,16 @@ ul {
 
 /* ナビのリンク */
 .nav-items__item a {
-  color: black;
   width: 100%;
   display: block;
   text-align: center;
   font-size: 20px;
   margin-bottom: 24px;
+  text-decoration: none;
+  color: #666666;
+  font-family:'Noto Sans JP' ;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 960px) {
@@ -155,7 +168,11 @@ ul {
 
 
 
-
+.quiz_main{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
 
 
 
@@ -192,6 +209,7 @@ a {
   color: #FFFFFF;
   font-family: 'Noto Sans JP';
   font-style: normal;
+  font-weight: 700;
 }
 
 .q_paragraph_2nd{
@@ -199,6 +217,7 @@ a {
   color: #FFFFFF;
   font-family: 'Noto Sans JP';
   font-style: normal;
+  font-weight: 700;
 }
 
 /* START クイズ */
@@ -266,7 +285,7 @@ a {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 3.5vw;
 }
 
 .q_source{
@@ -281,7 +300,7 @@ h2 {
 /* START Q1 */
 .q1_image{
   max-width: 70vw;
-  max-height: 35vh;
+  /* max-height: 35vh; */
   display: block;
   margin: 65px auto;
 }
@@ -337,7 +356,7 @@ h2 {
 /* START Q2 */
 .q2_image{
   max-width: 70vw;
-  max-height: 35vh;
+  /* max-height: 35vh; */
   display: block;
   margin: 65px auto;
 }
@@ -346,7 +365,7 @@ h2 {
 /* START Q3 */
 .q3_image{
   max-width: 70vw;
-  max-height: 35vh;
+  /* max-height: 35vh; */
   display: block;
   margin: 65px auto;
 }
@@ -355,7 +374,7 @@ h2 {
 /* START Q4 */
 .q4_image{
   max-width: 70vw;
-  max-height: 35vh;
+  /* max-height: 35vh; */
   display: block;
   margin: 65px auto;
 }
@@ -364,7 +383,7 @@ h2 {
 /* START Q5 */
 .q5_image{
   max-width: 70vw;
-  max-height: 35vh;
+  /* max-height: 35vh; */
   display: block;
   margin: 65px auto;
 }
@@ -373,7 +392,7 @@ h2 {
 /* START Q6 */
 .q6_image{
   max-width: 70vw;
-  max-height: 35vh;
+  /* max-height: 35vh; */
   display: block;
   margin: 65px auto;
 }
@@ -458,11 +477,12 @@ h2 {
   left: 0px;
   top: 1875px;
   border-top: 1px solid #EEEEEE;
+  margin-top: 56px;
 }
 
 
 .footer_info {
-  display:block;
+  display:flex;
   justify-content: center;
   margin-top: 56px;
   margin-bottom: 32px;
@@ -508,3 +528,11 @@ h2 {
 }
 
 
+
+.footer_info_logo{
+  font-weight: 400;
+  text-decoration: none;
+  color: #666666;
+  margin-right: 0px;
+  padding-top: 24px;
+}
