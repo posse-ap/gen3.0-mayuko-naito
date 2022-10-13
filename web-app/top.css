@@ -1,0 +1,44 @@
+body{
+  max-width: 1200px;
+}
+
+.header_container{
+  /* width: 960px; */
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo_img{
+  /* position: absolute;; */
+  padding-left: 10%;
+  display: flex;
+  align-items: center;;
+}
+
+.header_btn{
+  color: #fff;
+  position: absolute;
+  right: 5%;
+  padding: 20px 90px;
+  display: inline-block;
+  text-decoration :none;
+  text-align: center;
+  background: -moz-linear-gradient(left, #0090CE, #02C5F5);
+  background: -webkit-linear-gradient(left, #0090CE, #02C5F5);
+  background: -webkit-linear-gradient(left, #0090CE, #02C5F5);
+  
+  /*--水平方向 垂直方向 影のぼかし 色--*/
+  /* box-shadow: 10px 10px 10px #0094D2(0,0,0,0.3);  
+   */
+  /*--角丸指定--*/
+  border-radius: 100vh;
+}
+
+main{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
