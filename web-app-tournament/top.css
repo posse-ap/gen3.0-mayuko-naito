@@ -1,5 +1,5 @@
 body{
-  max-width: 1200px;
+  /* max-width: 1500px; */
   background-color: #F5F5F8;
 }
 
@@ -9,7 +9,7 @@ header{
 }
 
 .header_container{
-  max-width: 1200px;
+  /* max-width: 1200px; */
   height: 64px;
   background-color: #fff;
   display: flex;
@@ -19,9 +19,10 @@ header{
 
 .logo_img{
   /* position: absolute;; */
-  padding-left: 10%;
+  padding-left: 15%;
   display: flex;
-  align-items: center;;
+  align-items: center;
+  width: 130px;;
 }
 
 .header_btn{
@@ -50,17 +51,83 @@ main{
   padding-top: 84px;
 }
 
-.hour_container{
-  margin-right: 50%;
-  display: flex;
-  justify-content: center;
+.main_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.today_container, .month_container, .total_container{
+.hour_number{
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.box_wrapper1{
+  /* display: grid; */
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+.box_wrapper2{
+  display: grid;
+  margin-left: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.hour_container{
+  /* margin-right: 50%; */
+  display: flex;
+}
+
+.today_container, .month_container{
   background-color: #fff;
-  width: 12vw;
-  height: 20vh;
-  color: #0090CE;
-  border-radius: 5px;
+  width: 33.3%;
+  height: 14vh;
+  border-radius: 7px;
   margin-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.total_container{
+  background-color: #fff;
+  width: 33.3%;
+  height: 14vh;
+  border-radius: 7px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.hour_main{
+  color: #0090CE;
+  font-weight: bold;
+}
+
+.hour_font{
+  text-align: center;
+  color: darkgray;
+}
+
+.bar_graph_container{
+  margin-top: 20px;
+  /* margin-right: 50%; */
+  background-color: #fff;
+  height: 50vh;
+  border-radius: 7px;
+}
+
+.language_container{
+  margin-top: 0px;
+  background-color: #fff;
+  /* width: 10vw;
+  height: 20vh; */
+  border-radius: 7px;
+}
+
+.content_container{
+  margin-top: 0px;
+  background-color: #fff;
+  /* width: 10vw;
+  height: 20vh; */
+  border-radius: 7px;
 }
