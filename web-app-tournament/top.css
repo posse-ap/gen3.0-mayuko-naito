@@ -131,3 +131,76 @@ main{
   height: 20vh; */
   border-radius: 7px;
 }
+
+
+
+
+
+/* body {
+  font-size: 16px;
+  height: 1300px;
+} */
+
+#close {
+  color: #fff;
+  padding: 15px 70px;
+  text-decoration :none;
+  text-align: center;
+  background: -moz-linear-gradient(left, #0090CE, #02C5F5);
+  background: -webkit-linear-gradient(left, #0090CE, #02C5F5);
+  background: -webkit-linear-gradient(left, #0090CE, #02C5F5);
+  
+  /*--水平方向 垂直方向 影のぼかし 色--*/
+  /* box-shadow: 10px 10px 10px #0094D2(0,0,0,0.3);  
+   */
+  /*--角丸指定--*/
+  border-radius: 100vh;
+  box-shadow : 4px 8px 10px #99ccff ;
+  
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #fff;
+  color: #555;
+  width: 900px;
+  padding: 56px;
+  border-radius: 30px;
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#modal p {
+  margin: 0 0 20px;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  display: none;
+}
+
+.modal_container{
+  display: flex;
+}
+
+.modal_font{
+  font-weight: 700;
+}

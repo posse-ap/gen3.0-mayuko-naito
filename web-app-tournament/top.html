@@ -14,7 +14,7 @@
       <div class="posse_logo">
         <img class="logo_img" src="logo.svg" alt="">
       </div>
-    <a href="" class="header_btn">記録・投稿</a>
+    <div id="open" class="header_btn" >記録・投稿</div>
 
     </div>
   </header>
@@ -50,5 +50,32 @@
     </div>
 
   </main>
+
+  <div id="mask" class="hidden"></div>
+  <section id="modal" class="hidden">
+    <div class="modal_container">
+      <div class="modal_left">
+        <div class="study_day"><div class="modal_font">学習日</div>
+      </div>
+        <div class="study_content"><div class="modal_font">学習コンテンツ（複数選択可）</div>
+        <div class="content_detail">
+          
+        </div>
+      </div>
+        <div class="study_language"><div class="modal_font">学習言語（複数選択可）</div>
+      </div>
+      </div>
+      <div class="modal_ridht">
+        <div class="study_hour"><div class="modal_font">学習時間</div>
+      </div>
+        <div class="twitter_coment"><div class="modal_font">Twitter用コメント</div>
+      </div>
+      </div>
+    </div>
+    <div id="close">
+      記録・投稿
+  </section>
+
+  <script src="modal.js"></script>
 </body>
 </html>
